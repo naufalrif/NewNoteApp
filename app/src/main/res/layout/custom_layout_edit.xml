@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_edit_note"
+            android:text="Edit Note"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_note_title_edit"
+            android:hint="Enter new title"
+            android:layout_below="@id/tv_edit_note"/>
+
+        <EditText
+            android:id="@+id/et_note_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_note_title_edit"
+            android:hint="Enter new note" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_save_note"
+            android:text="Save"
+            android:layout_below="@id/et_note_edit"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

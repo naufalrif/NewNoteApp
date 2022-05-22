@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.HomeFragment"
+    android:layout_margin="30dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_welcomeuser"
+            android:text="Welcome, user!"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_profile"
+            android:src="@drawable/profile"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_home"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/header"
+        android:text="Home"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_notes"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@id/title_home"
+        android:layout_marginTop="-3dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/teal_200">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_add_24"
+                android:layout_centerInParent="true"
+                android:id="@+id/btn_add_notes" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

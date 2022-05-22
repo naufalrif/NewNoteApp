@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.RegisterFragment"
+    android:layout_margin="30dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_register"
+            android:text="REGISTER"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="40sp"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/img_register"
+            android:layout_below="@id/title_register"
+            android:src="@drawable/profile"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_reg_username"
+            android:layout_below="@id/img_register"
+            android:hint="Masukkan Username"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_reg_email"
+            android:layout_below="@id/et_reg_username"
+            android:hint="Masukkan Email"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_reg_pass"
+            android:layout_below="@id/et_reg_email"
+            android:hint="Masukkan Password"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_reg_pass_repeat"
+            android:layout_below="@id/et_reg_pass"
+            android:hint="Masukkan Konfirmasi Password"/>
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Register" />
+
+</RelativeLayout>

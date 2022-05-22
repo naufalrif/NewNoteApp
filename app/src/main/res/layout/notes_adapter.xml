@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_judulfilm"
+
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:text="Judul Buku"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_penulis"
+                android:layout_below="@id/tv_judulfilm"
+                android:textSize="15sp"
+                android:text="Tanggal Film"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
